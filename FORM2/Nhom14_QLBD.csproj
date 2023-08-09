@@ -1,0 +1,238 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCE322A3-5DF7-4068-A110-6E4B8826F60C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FORM2</RootNamespace>
+    <AssemblyName>FORM2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v23.1" />
+    <Reference Include="DevExpress.Data.Desktop.v23.1" />
+    <Reference Include="DevExpress.Data.v23.1" />
+    <Reference Include="DevExpress.Utils.v23.1" />
+    <Reference Include="DevExpress.Sparkline.v23.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v23.1" />
+    <Reference Include="DevExpress.Printing.v23.1.Core" />
+    <Reference Include="DevExpress.Drawing.v23.1" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Bang.cs" />
+    <Compile Include="Data\CauThu.cs" />
+    <Compile Include="Data\QLBD.cs" />
+    <Compile Include="Data\QuocGia.cs" />
+    <Compile Include="Data\QuocGia2.cs" />
+    <Compile Include="Data\TaiKhoan.cs" />
+    <Compile Include="Data\TranDau.cs" />
+    <Compile Include="Data\XepHang.cs" />
+    <Compile Include="frmXHCT.cs" />
+    <Compile Include="frmXHCT.Designer.cs">
+      <DependentUpon>frmXHCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCTTDau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTTDau.Designer.cs">
+      <DependentUpon>frmCTTDau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDK.Designer.cs">
+      <DependentUpon>frmDK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDN.Designer.cs">
+      <DependentUpon>frmDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainAdmin.Designer.cs">
+      <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTK.Designer.cs">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQMK.Designer.cs">
+      <DependentUpon>frmQMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemCT.designer.cs">
+      <DependentUpon>frmThemCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemTD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemTD.Designer.cs">
+      <DependentUpon>frmThemTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Bảng xếp hạng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\Bảng xếp hạng.designer.cs">
+      <DependentUpon>Bảng xếp hạng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\frmTKCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\frmTKCT.designer.cs">
+      <DependentUpon>frmTKCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Tin Tức.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\Tin Tức.designer.cs">
+      <DependentUpon>Tin Tức.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder1\Trận Đấu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\Trận Đấu.designer.cs">
+      <DependentUpon>Trận Đấu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmXHCT.resx">
+      <DependentUpon>frmXHCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCTTDau.resx">
+      <DependentUpon>frmCTTDau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDK.resx">
+      <DependentUpon>frmDK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDN.resx">
+      <DependentUpon>frmDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainAdmin.resx">
+      <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTK.resx">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQMK.resx">
+      <DependentUpon>frmQMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemCT.resx">
+      <DependentUpon>frmThemCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemTD.resx">
+      <DependentUpon>frmThemTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\Bảng xếp hạng.resx">
+      <DependentUpon>Bảng xếp hạng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\frmTKCT.resx">
+      <DependentUpon>frmTKCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\Tin Tức.resx">
+      <DependentUpon>Tin Tức.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder1\Trận Đấu.resx">
+      <DependentUpon>Trận Đấu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
